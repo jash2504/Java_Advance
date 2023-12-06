@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>NewServlet</servlet-name>
+        <servlet-class>NewServlet</servlet-class>
+        <servlet-name>Config</servlet-name>
+        <servlet-class>Config</servlet-class>
+
+
+        <init-param>
+            <param-name>INDIA</param-name>
+            <param-value>Surat</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>USA</param-name>
+            <param-value>Chicago</param-value>
+        </init-param>
+    </servlet>
+    <context-param>
+        <param-name>ABC</param-name>
+        <param-value>xyz</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>JASH</param-name>
+        <param-value>HSAJ</param-value>
+    </context-param>
+
+    <servlet-mapping>
+        <servlet-name>NewServlet</servlet-name>
+        <url-pattern>/NewServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
